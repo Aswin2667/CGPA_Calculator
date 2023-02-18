@@ -23,7 +23,7 @@ function gradeCalc(grade, unit) {
     const course_name = `
     <form class="add_new key-${counter}">
       <input type="text" placeholder="Course Code" class="courses key-${counter}" required>
-          <input type="text" placeholder="Credit Unit" class="credit-units key-${counter}" required>
+          <input type="text" placeholder="Credit Points" class="credit-units key-${counter}" required>
           <select class="grade key-${counter}" required>
         <option value="select">Select</option>
         <option value="4">O</option>
