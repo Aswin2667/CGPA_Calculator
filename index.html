@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = 
+"icon.png" type = "image/x-icon">
+    <script src="script.js"></script>
+    <marquee id="tag" scrollamount=19 direction="right" color="">
+        <a href="mailto:aswin96777@gmail.com">If u find any issue or miscalculation click me!!!</a>
+    </marquee>
+    
+</head>
+<body>
+    <div class="calculator-box">
+        <h1>CGPA CALCULATOR</h1>
+        <p>
+          This CGPA Calculator is based on ESEC Grade system
+        </p>
+        <div id="course-wrapper">
+          <form class="key-0">
+            <p> <label id="course-row" for="courses">Course Code:</label> 
+             <label id="credit-row" for="credit-units">Credit points:</label>
+           <label id="grade-row" for="grade">Grades: </label></p>
+              <input
+                type="text"
+                placeholder="Course Code"
+                class="courses key-0"
+                required/>
+              <input
+                type="number"
+                class="credit-units key-0"
+                placeholder="Credit Units"
+                value=""
+                required
+              />
+              <select class="grade key-0" required>
+                <option class="grade" value="select">Select</option>
+                <option class="grade" value="4">O</option>
+                <option class="grade" value="3">A+</option>
+                <option class="grade" value="2">A</option>
+                <option class="grade" value="1">B+</option>
+                <option class="grade" value="0">B</option>
+              </select>
+          </form>
+        </div>
+        <div class="btn">
+          <button onclick="addCourse()">+ Add Course</button>
+          <button onclick="removeCourse()">- Remove Course</button>
+          <button onclick="calcCgpa()">Calculate CGPA</button>
+        </div>
+        <div class="lastp">
+          <p id="cgpa-calc">Your CGPA is:</p>
+        </div>
+      </div>
+    
+</body>
+</html>
