@@ -1,18 +1,13 @@
 function gradeCalc(grade, unit) {
     if (grade === "O") {
-        console.log(10*unit)
       return 10 * unit;
     } else if (grade === "A+") {
-        console.log(9*unit)
       return 9 * unit;
     } else if (grade === "A") {
-        console.log(8*unit)
       return 8 * unit;
     } else if (grade === "B+") {
-        console.log(7*unit)
       return 7 * unit;
     } else if (grade === "B") {
-        console.log(6*unit)
       return 6 * unit;
     } 
   }
